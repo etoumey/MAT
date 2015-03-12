@@ -5,23 +5,34 @@ if nargin == 1
     file = varargin{1};
     author = 'No Name';
     maketitle = 'Untitled';
+    storePath = '\Users\Eliot\Documents\School\LaTeX';
 elseif nargin == 2
     author = varargin{2};
     file = varargin{1};
     maketitle = 'Untitled';
+    storePath = '\Users\Eliot\Documents\School\LaTeX';
 elseif nargin == 3
     author = varargin{2};
     file = varargin{1};
     maketitle = varargin{3};
+    storePath = '\Users\Eliot\Documents\School\LaTeX';
 elseif nargin == 4;
     body = varargin{4};
     author = varargin{2};
     file = varargin{1};
     maketitle = varargin{3};
+    storePath = '\Users\Eliot\Documents\School\LaTeX';
+elseif nargin == 5
+    body = varargin{4};
+    author = varargin{2};
+    file = varargin{1};
+    maketitle = varargin{3};
+    storePath = varargin{5};
 else
     maketitle = 'Untitled';
     author = 'No Name';
     file = 'default';
+    storePath = '\Users\Eliot\Documents\School\LaTeX';
 end
 
 file_name  = strcat(file,'.tex');
@@ -43,7 +54,7 @@ fprintf(TeXcode, '\n\\end{document}');
 fclose(TeXcode);
 fclose('all');
 
-movefile(file_name, '\Users\Eliot\Documents\School\LaTeX');
+movefile(file_name, storePath);
 
 end
 

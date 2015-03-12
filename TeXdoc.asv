@@ -42,5 +42,8 @@ fprintf(TeXcode, body);
 fprintf(TeXcode, '\n\\end{document}');
 fclose(TeXcode);
 fclose('all');
+
+movefile(file_name, store_path);
+
 end
 
