@@ -7,11 +7,11 @@ if nargin == 1
     maketitle = 'Untitled';
 elseif nargin == 2
     author = varargin{2};
-    file = varagin{1};
+    file = varargin{1};
     maketitle = 'Untitled';
 elseif nargin == 3
     author = varargin{2};
-    file = varagrin{1};
+    file = varargin{1};
     maketitle = varargin{3};
 elseif nargin == 4;
     body = varargin{4};
