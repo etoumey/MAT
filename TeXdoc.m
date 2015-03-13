@@ -18,6 +18,7 @@ elseif nargin == 4;
     author = varargin{2};
     file = varargin{1};
     maketitle = varargin{3};
+
 elseif nargin == 5
     body = varargin{4};
     author = varargin{2};
@@ -48,6 +49,7 @@ fprintf(TeXcode, '\n\\end{document}');
 fclose(TeXcode);
 fclose('all');
 
+movefile(file_name, '\Users\Eliot\Documents\School\LaTeX');
 
 end
 
