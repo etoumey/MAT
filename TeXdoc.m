@@ -34,7 +34,7 @@ file_name  = strcat(file,'.tex');
 TeXcode = fopen(file_name,'w');
 %% PREAMBLE TO DOC
 fprintf(TeXcode,'\\documentclass[letterpaper]{article}\n');
-fprintf(TeXcode,'\\usepackage{amsmath}\n\\usepackage[margin=1in]{geometry}\n\n');
+fprintf(TeXcode,'\\usepackage{amsmath}\n\\usepackage[margin=1in]{geometry}\n\\usepackage{tikz}\\usepackage{pgfplots}\n');
 fprintf(TeXcode,'\\title{%s}\n\\author{%s}\n\\date{\\today}\n\\begin{document}\n\\maketitle{}\n', maketitle, author);
 
 
